@@ -1,7 +1,7 @@
 import pandas as pr
 dta=pr.DataFrame(columns=['Name','Weight','Height','BMI','Status'])
 while True:
-    a=input("\nEnter your name:")
+    a=input("Enter your name:")
     b=float(input("Enter your Weight in (kg.):"))
     c=float(input("Enter your height ini (meter):"))
     bi=b/(c**2)
@@ -21,7 +21,7 @@ while True:
     d=input("Do you want to add another record..?(yes/no):")
     if d.lower()!='yes':
         break
-    print("\n---BMI Record---")
+    print("---BMI Record---")
     print(dta)
     dta.to_csv("bmi_recd.csv",index=False)
-    print("\n All records saved...")
+    print(" All records saved...")
